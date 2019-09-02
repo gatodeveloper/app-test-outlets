@@ -5,5 +5,5 @@
   <li>Item d</li>
   <li>Item e</li>
 </ul>
-<a [routerLink]="['products', {outlets: {tabs: ['a/create']}}]">Create</a>
+<button [routerLink]="[{ outlets: { tabs: ['products']}}]">Create</button>
 <a (click)="goToCreate()">Create 2</a>

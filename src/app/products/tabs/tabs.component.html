@@ -6,6 +6,7 @@
     <a (click)="goToDetail('b')" class="tab">Photos</a>
     <a (click)="goToDetail('a')" class="tab">Questionnaire</a>
     <a (click)="goToDetail('b')" class="tab">Safety</a>
+    <a [routerLink]="['products', {outlets: {tabs: 'a'}}]">Safety</a>
   </nav>
   <div class="content-tabs">
     <router-outlet (activate)="setRoutedComponent($event)"></router-outlet>

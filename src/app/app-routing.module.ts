@@ -68,6 +68,11 @@ const routes: Routes = [
       {
         path: 'products/detail',
         component: AComponent,
+        children: [
+          {
+            path: '',
+            component: ListComponent,
+        }]
         //outlet: 'listing'
       },
       { path: '',   redirectTo: '/products', pathMatch: 'full' },
