@@ -1,0 +1,14 @@
+<div class="tabs-component">
+  <nav class="tabs">
+    <a (click)="goToDetail('a')" class="tab">Headcount</a>
+    <a (click)="goToDetail('b')" class="tab">Tasks</a>
+    <a (click)="goToDetail('a')" class="tab">Notes</a>
+    <a (click)="goToDetail('b')" class="tab">Photos</a>
+    <a (click)="goToDetail('a')" class="tab">Questionnaire</a>
+    <a (click)="goToDetail('b')" class="tab">Safety</a>
+  </nav>
+  <div class="content-tabs">
+    <router-outlet (activate)="setRoutedComponent($event)"></router-outlet>
+    <!-- <ng-component></ng-component> -->
+  </div>
+</div>
